@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-2","id":1},{"content":"pool-1-thread-1","id":2},{"content":"pool-1-thread-5","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-3","id":5}];
+var items = [{"id":1,"group":1,"content":"tests\/Put[1:3]","start":1623404921623,"end":1623404922519,"title":"tests\/Put[1:3] 15:18:41.623-15:18:42.519 PUT demo 1"},{"id":2,"group":1,"content":"tests\/FirstTest[1:3]","start":1623404918772,"end":1623404920894,"title":"tests\/FirstTest[1:3] 15:18:38.772-15:18:40.894 Test a simple GET API Tests"},{"id":3,"group":2,"content":"tests\/Delete[1:3]","start":1623404918714,"end":1623404921061,"title":"tests\/Delete[1:3] 15:18:38.714-15:18:41.061 Delete API test"},{"id":4,"group":2,"content":"tests\/Post[1:8]","start":1623404921157,"end":1623404922513,"title":"tests\/Post[1:8] 15:18:41.157-15:18:42.513 Simple Post request demo 1"},{"id":5,"group":3,"content":"tests\/Post[2:15]","start":1623404921123,"end":1623404922568,"title":"tests\/Post[2:15] 15:18:41.123-15:18:42.568 Post request from background demo 2"},{"id":6,"group":4,"content":"tests\/Post[3:22]","start":1623404921113,"end":1623404922352,"title":"tests\/Post[3:22] 15:18:41.113-15:18:42.352 Post request with reponse assertions demo 3"},{"id":7,"group":5,"content":"tests\/Post[4:29]","start":1623404921237,"end":1623404922609,"title":"tests\/Post[4:29] 15:18:41.237-15:18:42.609 Post request with read json file from background demo 4"},{"id":8,"group":5,"content":"tests\/Get[1:8]","start":1623404918723,"end":1623404921218,"title":"tests\/Get[1:8] 15:18:38.723-15:18:41.218 Get Demo1"},{"id":9,"group":4,"content":"tests\/Get[2:18]","start":1623404918716,"end":1623404921081,"title":"tests\/Get[2:18] 15:18:38.716-15:18:41.081 Get Demo2"},{"id":10,"group":3,"content":"tests\/Get[3:25]","start":1623404918712,"end":1623404921074,"title":"tests\/Get[3:25] 15:18:38.712-15:18:41.074 Get Demo3"},{"id":11,"group":1,"content":"tests\/Get[4:32]","start":1623404920914,"end":1623404921542,"title":"tests\/Get[4:32] 15:18:40.914-15:18:41.542 Get Demo4"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

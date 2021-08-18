@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>tests.Get</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2021-06-11 09:22:19 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Get Demo1</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:17]"><span>[2:17]</span> <span>Get Demo2</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:24]"><span>[3:24]</span> <span>Get Demo3</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:31]"><span>[4:31]</span> <span>Get Demo4</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">tests/Get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get API Demo</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Get Demo1</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1687</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://reqres.in/api/users?page=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1588</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">09:22:16.904 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:22:17.868 response time in milliseconds: 827
+1 &lt; 200
+1 &lt; Date: Fri, 11 Jun 2021 03:51:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 959
+1 &lt; cf-request-id: 0a9acbb83b00002e39743e9000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=oJftCEyecdRQoY8O9D1LH9TjXbPsoUwIYdiFpFBktP1b6R5ZaQ1DPosvE3sIIlbx1MmfQOopA75k5AUCT37SYjudj0fyIvZfVtJ7nhuRxi40%2F9QGwh5V&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 65d7e239fb0b2e39-BOM
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">55</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">09:22:17.937 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseTime</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.12">09:22:17.945 [print] 827 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseStatus</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.13">09:22:17.954 [print] 200 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseHeaders</span>
+      </div>
+    </div>
+    <div class="time-cell passed">21</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">09:22:17.975 [print] {
+  &quot;Date&quot;: [
+    &quot;Fri, 11 Jun 2021 03:51:55 GMT&quot;
+  ],
+  &quot;Content-Type&quot;: [
+    &quot;application/json; charset=utf-8&quot;
+  ],
+  &quot;Transfer-Encoding&quot;: [
+    &quot;chunked&quot;
+  ],
+  &quot;Connection&quot;: [
+    &quot;keep-alive&quot;
+  ],
+  &quot;X-Powered-By&quot;: [
+    &quot;Express&quot;
+  ],
+  &quot;Access-Control-Allow-Origin&quot;: [
+    &quot;*&quot;
+  ],
+  &quot;Etag&quot;: [
+    &quot;W/\&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw\&quot;&quot;
+  ],
+  &quot;Via&quot;: [
+    &quot;1.1 vegur&quot;
+  ],
+  &quot;Cache-Control&quot;: [
+    &quot;max-age=14400&quot;
+  ],
+  &quot;CF-Cache-Status&quot;: [
+    &quot;HIT&quot;
+  ],
+  &quot;Age&quot;: [
+    &quot;959&quot;
+  ],
+  &quot;cf-request-id&quot;: [
+    &quot;0a9acbb83b00002e39743e9000000001&quot;
+  ],
+  &quot;Expect-CT&quot;: [
+    &quot;max-age=604800, report-uri=\&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\&quot;&quot;
+  ],
+  &quot;Report-To&quot;: [
+    &quot;{\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https:\\/\\/a.nel.cloudflare.com\\/report\\/v2?s=oJftCEyecdRQoY8O9D1LH9TjXbPsoUwIYdiFpFBktP1b6R5ZaQ1DPosvE3sIIlbx1MmfQOopA75k5AUCT37SYjudj0fyIvZfVtJ7nhuRxi40%2F9QGwh5V\&quot;}],\&quot;group\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+  ],
+  &quot;NEL&quot;: [
+    &quot;{\&quot;report_to\&quot;:\&quot;cf-nel\&quot;,\&quot;max_age\&quot;:604800}&quot;
+  ],
+  &quot;Vary&quot;: [
+    &quot;Accept-Encoding&quot;
+  ],
+  &quot;Server&quot;: [
+    &quot;cloudflare&quot;
+  ],
+  &quot;CF-RAY&quot;: [
+    &quot;65d7e239fb0b2e39-BOM&quot;
+  ],
+  &quot;alt-svc&quot;: [
+    &quot;h3-27=\&quot;:443\&quot;; ma=86400, h3-28=\&quot;:443\&quot;; ma=86400, h3-29=\&quot;:443\&quot;; ma=86400, h3=\&quot;:443\&quot;; ma=86400&quot;
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print responseCookies</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">09:22:17.978 [print] null 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:17]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:17]</span>
+                <span class="scenario-name">Get Demo2</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1657</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:17]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:17]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users?page=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">87</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1466</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.19">09:22:16.903 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:22:17.833 response time in milliseconds: 898
+1 &lt; 200
+1 &lt; Date: Fri, 11 Jun 2021 03:51:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 959
+1 &lt; cf-request-id: 0a9acbb83c000031b7fc282000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=cm%2BLP%2BtfVg7cVNBUQa%2BS5SwoXbttRo5th76qlm76HDiolUM53ye3zAWw4n%2Fj4dXkrjbbC5r9jMWq0ehbyZVW3unkXk3wYqkopHaCPLJ2AFQgV7ye0lDC&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 65d7e239fbe831b7-BOM
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">100</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">09:22:17.947 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:24]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:24]</span>
+                <span class="scenario-name">Get Demo3</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1644</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:24]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:24]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">71</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1502</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.27">09:22:16.906 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:22:17.876 response time in milliseconds: 884
+1 &lt; 200
+1 &lt; Date: Fri, 11 Jun 2021 03:51:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 959
+1 &lt; cf-request-id: 0a9acbb83c00002e04ca0f8000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=7V4PISTjgQ5w5tF%2F1O7m2UmIXqdQqErh0imRD3CqW0s20yPexqSxXMmt8CvwOltRbkwb682QF%2FbLJkK4%2BYM7yUY%2Bajw9ITyLRranbZsOR%2FI5Ljs2k2wR&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 65d7e239f8562e04-BOM
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">63</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.29">09:22:17.943 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:31]</span>
+                <span class="scenario-name">Get Demo4</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1603</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url &#39;https://reqres.in/api&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/users&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">67</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param page = 2</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1452</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">09:22:16.904 request:
+1 &gt; GET https://reqres.in/api/users?page=2
+1 &gt; Accept: application/json
+1 &gt; Host: reqres.in
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/15.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:22:17.842 response time in milliseconds: 868
+1 &lt; 200
+1 &lt; Date: Fri, 11 Jun 2021 03:51:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Etag: W/&quot;406-ut0vzoCuidvyMf8arZpMpJ6ZRDw&quot;
+1 &lt; Via: 1.1 vegur
+1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: HIT
+1 &lt; Age: 959
+1 &lt; cf-request-id: 0a9acbb83700000f2cda341000000001
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v2?s=WdEo783ngK35NSSgF49KD4a%2BUDj2EghYK8Xjmhl9yzu5dyRlXfXfj0nHhRut6Jacm%2FV8W2n7FCglv%2B73icM4dHM6ayePzX25CeMNtKt0cSO6zgNa60O6&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Vary: Accept-Encoding
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 65d7e239fa1d0f2c-BOM
+1 &lt; alt-svc: h3-27=&quot;:443&quot;; ma=86400, h3-28=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400, h3=&quot;:443&quot;; ma=86400
+{&quot;per_page&quot;:6,&quot;total&quot;:12,&quot;data&quot;:[{&quot;last_name&quot;:&quot;Lawson&quot;,&quot;id&quot;:7,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/7-image.jpg&quot;,&quot;first_name&quot;:&quot;Michael&quot;,&quot;email&quot;:&quot;michael.lawson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Ferguson&quot;,&quot;id&quot;:8,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/8-image.jpg&quot;,&quot;first_name&quot;:&quot;Lindsay&quot;,&quot;email&quot;:&quot;lindsay.ferguson@reqres.in&quot;},{&quot;last_name&quot;:&quot;Funke&quot;,&quot;id&quot;:9,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/9-image.jpg&quot;,&quot;first_name&quot;:&quot;Tobias&quot;,&quot;email&quot;:&quot;tobias.funke@reqres.in&quot;},{&quot;last_name&quot;:&quot;Fields&quot;,&quot;id&quot;:10,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/10-image.jpg&quot;,&quot;first_name&quot;:&quot;Byron&quot;,&quot;email&quot;:&quot;byron.fields@reqres.in&quot;},{&quot;last_name&quot;:&quot;Edwards&quot;,&quot;id&quot;:11,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/11-image.jpg&quot;,&quot;first_name&quot;:&quot;George&quot;,&quot;email&quot;:&quot;george.edwards@reqres.in&quot;},{&quot;last_name&quot;:&quot;Howell&quot;,&quot;id&quot;:12,&quot;avatar&quot;:&quot;https:\/\/reqres.in\/img\/faces\/12-image.jpg&quot;,&quot;first_name&quot;:&quot;Rachel&quot;,&quot;email&quot;:&quot;rachel.howell@reqres.in&quot;}],&quot;page&quot;:2,&quot;total_pages&quot;:2,&quot;support&quot;:{&quot;text&quot;:&quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,&quot;url&quot;:&quot;https:\/\/reqres.in\/#support-heading&quot;}}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">80</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">09:22:17.953 [print] {
+  &quot;per_page&quot;: 6,
+  &quot;total&quot;: 12,
+  &quot;data&quot;: [
+    {
+      &quot;last_name&quot;: &quot;Lawson&quot;,
+      &quot;id&quot;: 7,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/7-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Michael&quot;,
+      &quot;email&quot;: &quot;michael.lawson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Ferguson&quot;,
+      &quot;id&quot;: 8,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/8-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Lindsay&quot;,
+      &quot;email&quot;: &quot;lindsay.ferguson@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Funke&quot;,
+      &quot;id&quot;: 9,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/9-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Tobias&quot;,
+      &quot;email&quot;: &quot;tobias.funke@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Fields&quot;,
+      &quot;id&quot;: 10,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/10-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Byron&quot;,
+      &quot;email&quot;: &quot;byron.fields@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Edwards&quot;,
+      &quot;id&quot;: 11,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/11-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;George&quot;,
+      &quot;email&quot;: &quot;george.edwards@reqres.in&quot;
+    },
+    {
+      &quot;last_name&quot;: &quot;Howell&quot;,
+      &quot;id&quot;: 12,
+      &quot;avatar&quot;: &quot;https://reqres.in/img/faces/12-image.jpg&quot;,
+      &quot;first_name&quot;: &quot;Rachel&quot;,
+      &quot;email&quot;: &quot;rachel.howell@reqres.in&quot;
+    }
+  ],
+  &quot;page&quot;: 2,
+  &quot;total_pages&quot;: 2,
+  &quot;support&quot;: {
+    &quot;text&quot;: &quot;To keep ReqRes free, contributions towards server costs are appreciated!&quot;,
+    &quot;url&quot;: &quot;https://reqres.in/#support-heading&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
